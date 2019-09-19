@@ -1,0 +1,50 @@
+{
+    "name": "amodtfx/grido",
+    "type": "library",
+    "description": "Grido - DataGrid for Nette Framework",
+    "keywords": ["datagrid", "datalist", "tablegrid", "grid", "list", "table", "nette"],
+    "homepage": "https://github.com/Amodtfx/Grido",
+    "license": ["MIT"],
+    "authors": [{
+        "name": "Petr Bugyík",
+        "homepage": "http://petr.bugyik.cz/"
+    }],
+    "support": {
+        "issues": "https://github.com/Amodtfx/Grido/issues/",
+        "forum": "http://forum.nette.org/cs/13109-grido-datagrid-pro-nette/"
+    },
+    "autoload": {
+        "psr-4": {
+            "Grido\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Grido\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/tester --colors 1 -p php tests/",
+        "syntax": "./vendor/bin/phpcs --standard=standards.xml --colors --encoding=utf-8 -sp src/",
+        "syntax-fix": "./vendor/bin/phpcbf --standard=standards.xml src/"
+    },
+    "require": {
+        "php": ">=5.6",
+        "nette/utils": "~3.0",
+        "nette/forms": "~3.0",
+        "latte/latte": "~3.0",
+        "nette/application": "~3.0",
+        "nette/component-model": "~3.0",
+        "symfony/property-access": "~3.0"
+    },
+    "require-dev": {
+        "tracy/tracy": "~3.0",
+        "nette/bootstrap": "~3.0",
+        "nette/database": "~3.0",
+        "nette/tester": "~2.3",
+        "mockery/mockery": "~1.2.3",
+        "dibi/dibi": "~3.0.1",
+        "kdyby/doctrine": "~3.3.1",
+        "squizlabs/php_codesniffer": "~3.4"
+    }
+}
